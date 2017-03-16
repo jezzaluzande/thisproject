@@ -1,0 +1,193 @@
+html {
+	font-family: 'Roboto', sans-serif;
+	color: #15314d;
+	overflow-y: scroll;
+	font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+	html { font-size: 14px; }
+}
+body {
+	margin: 0px;
+	padding: 20px;
+}
+@media (max-width: 600px) { .hide-on-mobile { display: none; } }
+@media (min-width: 601px) and (max-width: 1024px) { .hide-on-tablet { display: none; } }
+@media (min-width: 1025px) { .hide-on-desktop { display: none; } }
+
+#booking-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	margin: 20px 0px 40px 0px;
+	border: 1px solid red;
+}
+#booking-left {
+	border: 1px solid yellow;
+}
+#booking-right {
+	padding: 0px 20px 10px 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	border: 1px solid green;
+}
+#booking-left label, #booking-right label {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+#booking-right h1 {
+	font-family: 'Kadwa', serif;
+	font-size: 1.6em;
+	padding: 0;
+	margin: 0;
+	margin-top: -10px;
+}
+
+/** TUTOR DETAILS **/
+
+#tutor-details {
+	padding: 20px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #15314d;
+	color: #ffffff;
+	width: 210px;
+	min-height: 500px;
+}
+.picture-profile {
+	border: 1.5px solid white;
+	border-radius: 50%;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+/** CALENDAR **/
+
+#calendar-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
+	border: 1px solid blue;
+}
+#outer_calendar {
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+#outer_legend {	
+	margin-left: 20px;
+}
+#calendar {
+	margin-top: 10px;
+}
+#calendar #week {
+	height: 40px;
+}
+#calendar #center_date {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+#calendar th {
+	background-color: #34495e;
+	color: #ffffff;
+	text-align: center;
+	font-weight: normal;
+	height: 25px;
+}
+#calendar input[type=button] {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	outline: none;
+	border: 0px; 
+	box-sizing: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+.green, .unavailable, .closed, .part_booked, .fully_booked, .past {
+	text-decoration: none;	
+	width: 63px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: black;
+	font-size: 1.1em;
+}
+.green, .legend-green {
+	background: linear-gradient(#fff, #66cc66);
+}
+.part_booked, .legend-part {
+	background: linear-gradient(#fff, #ffcc66);
+}
+.fully_booked, .legend-full {
+	background: linear-gradient(#fff, #cc6666);
+}
+.unavailable, .closed, .past, .legend-unavailable {
+	/* background: linear-gradient(#fff, #d5d5d5); */
+}
+.legend-green, .legend-unavailable, .legend-part, .legend-full {
+	width: 20px;
+	height: 20px;
+	border: 1px solid grey;
+}
+.center {
+	text-align: center;
+}
+
+/** BOOKING BASKET **/
+
+#outer_booking {
+	padding: 20px 0px 20px 30px;
+	border: 1px solid black;
+}
+#outer_booking label {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+#outer_booking #booking th { /** Booking table header **/
+	background-color: #34495e;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	font-weight: normal;
+}
+#outer_booking #booking td {
+	border: 1px solid #cccccc;
+	text-align: center;
+	height: 30px;
+}
+#outer_booking span {
+	color:red
+}
+#selected_slots {
+	
+}
+#outer_basket {
+	border: 1px solid orange;
+	padding: 20px 0px 20px 30px;
+}
+#outer_basket #selected_slots {
+	/*line-height: 1.6em;*/
+}
+#other_details {
+	border: 1px solid yellow;
+	padding: 20px 0px 20px 30px;
+}
+#student_details {
+	
+}
+#basket_details {
+	border: 1px solid blue;
+}
+#currency, #total {
+	font-weight: bold;
+	font-size: 1.15em;
+	/*color: #fedf81;*/
+}
